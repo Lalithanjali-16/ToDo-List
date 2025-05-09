@@ -1,0 +1,148 @@
+.full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;  /* Ensure it takes up at least the full height of the viewport */
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.top {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; /* Ensure the top takes full width */
+  max-width: 400px; /* Fixed width for the input area */
+}
+
+.to-do {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+  align-items: center; /* Vertically center buttons */
+}
+
+button.add,
+button.cancel {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button.add {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button.add:hover {
+  background-color: #45a049;
+}
+
+button.cancel {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+button.cancel:hover {
+  background-color: #e41d36;
+}
+
+/* Row setup (task list area) */
+.row {
+  width: 100%;
+  max-width: 500px;  /* Fixed width for task list box */
+  height: 400px; /* Fixed height */
+  overflow-y: auto;  /* Allows scrolling if the list overflows */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.eachTask {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.eachTask button {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.eachTask button:hover {
+  background-color: #0b7dda;
+}
+
+.eachTask button:active {
+  background-color: #1e88e5;
+}
+
+.eachTask button.edit {
+  background-color: #ff9800;
+}
+
+.eachTask button.edit:hover {
+  background-color: #e68900;
+}
+
+.eachTask button.delete {
+  background-color: #f44336;
+}
+
+.eachTask button.delete:hover {
+  background-color: #e41d36;
+}
+
+.eachTask button.up {
+  background-color: #4CAF50;
+}
+
+.eachTask button.up:hover {
+  background-color: #45a049;
+}
+
+.eachTask button.down {
+  background-color: #2196F3;
+}
+
+.eachTask button.down:hover {
+  background-color: #0b7dda;
+}
