@@ -7,7 +7,7 @@ function Display() {
     const [editIndex,setEditIndex] = useState(null);
 
     const addElement = () =>{
-        if(name.trim() =='')return;
+        if(name.trim() ==='')return;
         if (tasks.includes(name.trim())){
             //alert('Task already exists');
             return;
